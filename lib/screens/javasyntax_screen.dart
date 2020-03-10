@@ -16,6 +16,7 @@ class _JavaSyntaxState extends State<JavaSyntax> {
             children: <Widget>[
               Container(
                 padding: const EdgeInsets.all(8.0),
+                alignment: Alignment.centerLeft,
                 child: Text(
                     'This is what a typicall code example in java looks like.',
                     style: TextStyle(fontSize: 16),
@@ -32,6 +33,7 @@ class _JavaSyntaxState extends State<JavaSyntax> {
               ),
               Container(
                   padding: const EdgeInsets.all(8.0),
+                  alignment: Alignment.centerLeft,
                   child: Text(
                     'Every line of code that runs in Java must be inside a class. In our example, we named the class MyClass. A class should always start with an uppercase first letter.\n\n'
                     'Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning.\n\n'
