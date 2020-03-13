@@ -3,6 +3,7 @@ import 'package:java_for_beginners_app/screens/javasyntax_screen.dart';
 import 'package:java_for_beginners_app/screens/javamethods_screen.dart';
 import 'package:java_for_beginners_app/screens/javacomments_screen.dart';
 import 'package:java_for_beginners_app/screens/javavariables_screen.dart';
+import 'package:java_for_beginners_app/screens/javadatatypes_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -38,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("java syntax", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
+                  title: Text("Java Syntax", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
                   trailing: Icon(Icons.play_circle_outline, color: Colors.orange[500],),
                 )),
           ), // Java Syntax Link
@@ -63,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("java comments", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
+                  title: Text("Java Comments", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
                   trailing: Icon(Icons.play_circle_outline, color: Colors.orange[500],),
                 )),
           ), // Java Comments Link
@@ -98,6 +99,31 @@ class _HomeScreenState extends State<HomeScreen> {
               print("Container clicked");
               Navigator.push(
                 context,
+                MaterialPageRoute(builder: (context) => JavaDataTypes()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Java Data Types", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
+                  trailing: Icon(Icons.play_circle_outline, color: Colors.orange[500],),
+                )),
+          ), // Java Methods Link
+
+          InkWell(
+            onTap: (){
+              print("Container clicked");
+              Navigator.push(
+                context,
                 MaterialPageRoute(builder: (context) => JavaMethods()),
               );
             },
@@ -113,11 +139,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("java methods", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
+                  title: Text("Java Methods", style: TextStyle(color: Colors.orange[500], fontSize: 25,)),
                   trailing: Icon(Icons.play_circle_outline, color: Colors.orange[500],),
                 )),
-          ), // Java Methods Link
-
+          ), // Java Data Types Link
         ],
       )
     );
