@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:java_for_beginners_app/screens/javabooleans_screen.dart';
 import 'package:java_for_beginners_app/screens/javasyntax_screen.dart';
 import 'package:java_for_beginners_app/screens/javamethods_screen.dart';
 import 'package:java_for_beginners_app/screens/javacomments_screen.dart';
@@ -6,6 +7,7 @@ import 'package:java_for_beginners_app/screens/javavariables_screen.dart';
 import 'package:java_for_beginners_app/screens/javadatatypes_screen.dart';
 import 'package:java_for_beginners_app/screens/javaoperators_screen.dart';
 import 'package:java_for_beginners_app/screens/javastrings_screen.dart';
+import 'package:java_for_beginners_app/screens/javamath_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -184,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.orange[500],
                   ),
                 )),
-          ), // Java Methods Link
+          ), // Java Operators Link
 
           InkWell(
             onTap: () {
@@ -216,7 +218,71 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.orange[500],
                   ),
                 )),
-          ), // Java Methods Link
+          ), // Java Strings Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaMath()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Java Math",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java Math Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaBooleans()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Java Booleans",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java Booleans Link
 
           InkWell(
             onTap: () {
