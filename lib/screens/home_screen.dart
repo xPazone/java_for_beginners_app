@@ -10,6 +10,8 @@ import 'package:java_for_beginners_app/screens/javastrings_screen.dart';
 import 'package:java_for_beginners_app/screens/javamath_screen.dart';
 import 'package:java_for_beginners_app/screens/javaifelse_screen.dart';
 import 'package:java_for_beginners_app/screens/javawhileloop_screen.dart';
+import 'package:java_for_beginners_app/screens/javaforloop_screen.dart';
+import 'package:java_for_beginners_app/screens/javaarrays_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -50,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Syntax",
+                  title: Text("Syntax",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -82,7 +84,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Comments",
+                  title: Text("Comments",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -114,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Variables",
+                  title: Text("Variables",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -146,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Data Types",
+                  title: Text("Data Types",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -178,7 +180,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Operators",
+                  title: Text("Operators",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -210,7 +212,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Strings",
+                  title: Text("Strings",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -242,7 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Math",
+                  title: Text("Math",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -274,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Booleans",
+                  title: Text("Booleans",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -306,7 +308,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java If ... Else",
+                  title: Text("If ... Else",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -338,7 +340,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java While Loop",
+                  title: Text("While Loop",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
@@ -348,7 +350,71 @@ class _HomeScreenState extends State<HomeScreen> {
                     color: Colors.orange[500],
                   ),
                 )),
-          ),// Java If... Else Link
+          ),// Java While Loop Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaForLoop()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("For Loop",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java For Loop Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaArrays()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Arrays",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java Arrays Link
 
           InkWell(
             onTap: () {
@@ -370,7 +436,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       image: AssetImage("assets/images/javalogo.png"),
                     ),
                   ),
-                  title: Text("Java Methods",
+                  title: Text("Methods",
                       style: TextStyle(
                         color: Colors.orange[500],
                         fontSize: 25,
