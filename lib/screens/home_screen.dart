@@ -8,6 +8,8 @@ import 'package:java_for_beginners_app/screens/javadatatypes_screen.dart';
 import 'package:java_for_beginners_app/screens/javaoperators_screen.dart';
 import 'package:java_for_beginners_app/screens/javastrings_screen.dart';
 import 'package:java_for_beginners_app/screens/javamath_screen.dart';
+import 'package:java_for_beginners_app/screens/javaifelse_screen.dart';
+import 'package:java_for_beginners_app/screens/javawhileloop_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -283,6 +285,70 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )),
           ),// Java Booleans Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaIfElse()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Java If ... Else",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java If... Else Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaWhileLoop()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Java While Loop",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),// Java If... Else Link
 
           InkWell(
             onTap: () {
