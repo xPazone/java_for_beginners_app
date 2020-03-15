@@ -12,6 +12,7 @@ import 'package:java_for_beginners_app/screens/javaifelse_screen.dart';
 import 'package:java_for_beginners_app/screens/javawhileloop_screen.dart';
 import 'package:java_for_beginners_app/screens/javaforloop_screen.dart';
 import 'package:java_for_beginners_app/screens/javaarrays_screen.dart';
+import 'package:java_for_beginners_app/screens/javamethodparameters_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -427,13 +428,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
                 padding: const EdgeInsets.all(8.0),
                 margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
-                color: Colors.lightBlue,
+                color: Colors.lightBlue[700],
                 child: ListTile(
                   leading: SizedBox(
                     height: 100.0,
                     width: 40.0,
                     child: Image(
-                      image: AssetImage("assets/images/javalogo.png"),
+                      image: AssetImage("assets/images/javalogo2.png"),
                     ),
                   ),
                   title: Text("Methods",
@@ -447,6 +448,39 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 )),
           ), // Java Data Types Link
+
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => JavaMethodParameters()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.lightBlue[700],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo2.png"),
+                    ),
+                  ),
+                  title: Text("Method Parameters",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ), // Java Data Types Link
+
         ],
       ),
     );

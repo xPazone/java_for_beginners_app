@@ -210,7 +210,7 @@ class _JavaArraysState extends State<JavaArrays> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'A multidimensional array is an array containing one or more arrays.\n\nTo create a two-dimensional array, add each array within its own set of curly braces:',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 16),
               ),
             ),
             Container(
