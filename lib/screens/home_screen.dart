@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:java_for_beginners_app/screens/impressum_screen.dart';
 import 'package:java_for_beginners_app/screens/javabooleans_screen.dart';
 import 'package:java_for_beginners_app/screens/javaclassattributes_screen.dart';
 import 'package:java_for_beginners_app/screens/javasyntax_screen.dart';
@@ -31,7 +32,21 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(
                 color: Colors.blue[800],
                 fontSize: 27,
-              ))),
+              )),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.contacts),
+              color: Colors.blue[800],
+              onPressed: () {
+                print("Container clicked");
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Impressum()),
+                );
+              },
+            ),
+          ],
+      ),
       body:
       ListView(
         children: <Widget>[
