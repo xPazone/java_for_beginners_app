@@ -10,7 +10,7 @@ class _JavaForLoopState extends State<JavaForLoop> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.lightBlue[100],
+          backgroundColor: Colors.lightBlue[700],
           title: Text("Java For Loop",
               style: TextStyle(color: Colors.orange[500]))),
       body: SingleChildScrollView(
@@ -33,7 +33,7 @@ class _JavaForLoopState extends State<JavaForLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -42,7 +42,7 @@ class _JavaForLoopState extends State<JavaForLoop> {
                 children: <Widget>[
                   Text('Syntax\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('for (statement 1; statement 2; statement 3) {\n // code block to be executed\n}',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -58,7 +58,7 @@ class _JavaForLoopState extends State<JavaForLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -67,7 +67,7 @@ class _JavaForLoopState extends State<JavaForLoop> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('for (int i = 0; i < 5; i++) {\n System.out.println(i);\n}',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),

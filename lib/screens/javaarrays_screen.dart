@@ -10,7 +10,7 @@ class _JavaArraysState extends State<JavaArrays> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.lightBlue[100],
+          backgroundColor: Colors.lightBlue[700],
           title: Text("Java Arrays",
               style: TextStyle(color: Colors.orange[500]))),
       body: SingleChildScrollView(
@@ -33,7 +33,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -55,7 +55,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -77,7 +77,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -107,7 +107,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -116,7 +116,7 @@ class _JavaArraysState extends State<JavaArrays> {
                 children: <Widget>[
                   Text('Syntax\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};\nSystem.out.println(cars[0]);\n// Outputs Volvo',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -148,7 +148,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -157,7 +157,7 @@ class _JavaArraysState extends State<JavaArrays> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('cars[0] = "Opel";',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -181,7 +181,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -190,7 +190,7 @@ class _JavaArraysState extends State<JavaArrays> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};\nSystem.out.println(cars.length);\n// Outputs 4',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -214,7 +214,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -223,7 +223,7 @@ class _JavaArraysState extends State<JavaArrays> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -239,7 +239,7 @@ class _JavaArraysState extends State<JavaArrays> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color:  Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -248,7 +248,7 @@ class _JavaArraysState extends State<JavaArrays> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };\nint x = myNumbers[1][2];\nSystem.out.println(x); // Outputs 7',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),

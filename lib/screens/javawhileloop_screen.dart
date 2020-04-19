@@ -10,7 +10,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          backgroundColor: Colors.lightBlue[100],
+          backgroundColor: Colors.lightBlue[700],
           title: Text("Java While Loop",
               style: TextStyle(color: Colors.orange[500]))),
       body: SingleChildScrollView(
@@ -49,7 +49,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -58,7 +58,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
                 children: <Widget>[
                   Text('Syntax\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('while (condition) {\n // code block to be executed\n}',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -74,7 +74,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -83,7 +83,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('int i = 0;\nwhile (i < 5) {\n System.out.println(i);\n  i++;\n}',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -115,7 +115,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -124,7 +124,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
                 children: <Widget>[
                   Text('Syntax\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('do {\n  // code block to be executed\n}\nwhile (condition);',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),
@@ -140,7 +140,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
               ),
             ),
             Container(
-              color: Colors.lightBlue[100],
+              color: Colors.lightBlue[700],
               padding: const EdgeInsets.all(8.0),
               margin: const EdgeInsets.all(8.0),
               alignment: Alignment.centerLeft,
@@ -149,7 +149,7 @@ class _JavaWhileLoopState extends State<JavaWhileLoop> {
                 children: <Widget>[
                   Text('Example\n',
                       style: TextStyle(
-                          fontSize: 20, color: Colors.lightBlue[800])),
+                          fontSize: 20, color: Colors.white)),
                   Text('int i = 0;\ndo {\n System.out.println(i);\n  i++;\n}\nwhile (i < 5);',
                       style:
                       TextStyle(fontSize: 16, color: Colors.orange[500])),

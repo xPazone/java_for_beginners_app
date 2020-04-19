@@ -349,13 +349,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
                 padding: const EdgeInsets.all(8.0),
                 margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
-                color: Colors.lightBlue[100],
+                color: Colors.lightBlue[700],
                 child: ListTile(
                   leading: SizedBox(
                     height: 100.0,
                     width: 40.0,
                     child: Image(
-                      image: AssetImage("assets/images/javalogo.png"),
+                      image: AssetImage("assets/images/javalogo2.png"),
                     ),
                   ),
                   title: Text("While Loop",
@@ -381,13 +381,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
                 padding: const EdgeInsets.all(8.0),
                 margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
-                color: Colors.lightBlue[100],
+                color: Colors.lightBlue[700],
                 child: ListTile(
                   leading: SizedBox(
                     height: 100.0,
                     width: 40.0,
                     child: Image(
-                      image: AssetImage("assets/images/javalogo.png"),
+                      image: AssetImage("assets/images/javalogo2.png"),
                     ),
                   ),
                   title: Text("For Loop",
@@ -413,13 +413,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Container(
                 padding: const EdgeInsets.all(8.0),
                 margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
-                color: Colors.lightBlue[100],
+                color: Colors.lightBlue[700],
                 child: ListTile(
                   leading: SizedBox(
                     height: 100.0,
                     width: 40.0,
                     child: Image(
-                      image: AssetImage("assets/images/javalogo.png"),
+                      image: AssetImage("assets/images/javalogo2.png"),
                     ),
                   ),
                   title: Text("Arrays",
