@@ -18,10 +18,9 @@ class _ImpressumState extends State<Impressum> {
               ))),
       body:
         Container(
-          alignment: Alignment.centerLeft,
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            'Java Classes/Objects',
+            'Angaben gemäß § 5 TMG\nRoman Klimesch\nVogelsberger Str. 51\n36124 Eichenzell\n\nKontakt\nTelefon: 01603673131\nE-Mail: roman@klimeschhome.de',
             style: TextStyle(fontSize: 20),
           ),
         ),
