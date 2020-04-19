@@ -16,6 +16,7 @@ import 'package:java_for_beginners_app/screens/javaforloop_screen.dart';
 import 'package:java_for_beginners_app/screens/javaarrays_screen.dart';
 import 'package:java_for_beginners_app/screens/javamethodparameters_screen.dart';
 import 'package:java_for_beginners_app/screens/javaclassesobjects_screen.dart';
+import 'package:java_for_beginners_app/screens/introduction_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -50,6 +51,38 @@ class _HomeScreenState extends State<HomeScreen> {
       body:
       ListView(
         children: <Widget>[
+          InkWell(
+            onTap: () {
+              print("Container clicked");
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Introduction()),
+              );
+            },
+            child: Container(
+                padding: const EdgeInsets.all(8.0),
+                margin: const EdgeInsets.only(top: 3.0, right: 3.0, left: 3.0),
+                color: Colors.grey[100],
+                child: ListTile(
+                  leading: SizedBox(
+                    height: 100.0,
+                    width: 40.0,
+                    child: Image(
+                      image: AssetImage("assets/images/javalogo.png"),
+                    ),
+                  ),
+                  title: Text("Introduction",
+                      style: TextStyle(
+                        color: Colors.orange[500],
+                        fontSize: 25,
+                      )),
+                  trailing: Icon(
+                    Icons.play_circle_outline,
+                    color: Colors.orange[500],
+                  ),
+                )),
+          ),
+
           InkWell(
             onTap: () {
               print("Container clicked");
