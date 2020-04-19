@@ -28,7 +28,7 @@ class _IntroductionState extends State<Introduction> {
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'This is an app dedicated to help people, that want to learn programming with Java.\nWe have explanations and examples for the basics in Java. The themes are split into threee degrees of difficulty.',
+                'This is an app dedicated to help people in the process of learning Java.\nOur Themes are split into three degrees of difficulty.',
                 style: TextStyle(fontSize: 18),
               ),
             ),
@@ -65,7 +65,7 @@ class _IntroductionState extends State<Introduction> {
               alignment: Alignment.centerLeft,
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'We wish you a lot of fun learning the Basics of Java!',
+                'We wish you a lot of fun learning the basics of Java!',
                 style: TextStyle(fontSize: 18),
               ),
             ),

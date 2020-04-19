@@ -77,7 +77,7 @@ class _JavaMethodsState extends State<JavaMethods> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'To call a method in Java, write the method\'s name followed by two parentheses () and a semicolon;\n\nIn the following example, myMethod() is used to print a text (the action), when it is called:',
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 16),
               ),
             ),
             Container(
